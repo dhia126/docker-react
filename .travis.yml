@@ -8,5 +8,7 @@ scripts:
 deploy:
     provider: heroku
     api_key:
-      secure: "dd07ff66-023c-4ea8-87de-cd6b1d77114a"         
+      secure: "dd07ff66-023c-4ea8-87de-cd6b1d77114a"     
+    app: docker-react      
     EXPOSE: 8000 
+    on: master
