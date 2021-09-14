@@ -6,5 +6,5 @@ COPY . .
 CMD ["npm","run","build"]
 
 FROM nginx
-EXPOSE 80
+EXPOSE 8000
 COPY --from=build-phase /app/build /usr/share/nginx/html
